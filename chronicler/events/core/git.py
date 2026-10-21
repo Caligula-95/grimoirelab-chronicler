@@ -198,7 +198,7 @@ class GitEventizer(Eventizer):
 
         attributes = {
             "id": event_id,
-            "linked_event": event_uuid,
+            "linkedevent": event_uuid,
             "type": event_type,
             "source": source,
             "time": time,
@@ -296,7 +296,7 @@ class GitEventizer(Eventizer):
 
             data = {
                 "commit": commit_hash,
-                "source": "git",
+                "datasource": "git",
                 "name": identity.name,
                 "username": identity.username,
                 "email": identity.email,
@@ -306,7 +306,7 @@ class GitEventizer(Eventizer):
 
             attributes = {
                 "id": event_id,
-                "linked_event": event_uuid,
+                "linkedevent": event_uuid,
                 "type": event_type,
                 "source": source,
                 "time": time,
