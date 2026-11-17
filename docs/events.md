@@ -14,6 +14,8 @@ all types of events. The attributes are based on the CloudEvents specification.
 | Field       | Type           | Description                                               |
 |------------ |---------------|-----------------------------------------------------------|
 | id          | String         | Event identifier                                          |
+| datasource  | String         | Name of the data source that generated the event          |
+| linkedevent | String         | Identifier of the event that this event is linked to      |
 | source      | URI-reference  | URL to the repository                                     |
 | specversion | String         | The version of the CloudEvents specification used         |
 | time        | Timestamp      | Timestamp of when the event happened                      |

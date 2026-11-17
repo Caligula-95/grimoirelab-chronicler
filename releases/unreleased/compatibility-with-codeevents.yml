@@ -1,0 +1,11 @@
+---
+title: Compliance with CodeEvents
+category: fixed
+author: Santiago Dueñas <sduenas@grimoirelab.org>
+issue: null
+notes: >
+  The field `linked_event` was not valid because CloudEvents requires
+  that attribute names use only lowercase letters. It has been renamed
+  to `linkedevent`.
+  At the same time the field `source` (in the identity events) clashed
+  with the source of the event. It has been renamed to `datasource`.
